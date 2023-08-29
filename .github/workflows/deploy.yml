@@ -8,14 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get and Cache dependencies
-        uses: briemenschneider/getandcachedepsnode@master
+        uses: briemenschneider/getandcachedepsnode@v1
       - name: Lint code
         run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Get and Cache dependencies
-        uses: briemenschneider/getandcachedepsnode@master
+        uses: briemenschneider/getandcachedepsnode@v1
       - name: Test code
         id: run-tests
         run: npm run test
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get and Cache dependencies
-        uses: briemenschneider/getandcachedepsnode@master
+        uses: briemenschneider/getandcachedepsnode@v1
       - name: Build website
         run: npm run build
       - name: Upload artifacts
